@@ -15,6 +15,8 @@ The architecture leverages a **MobileNetV2 image feature extractor**, combined w
 
 ## 🧠 Model Architecture
 
+  https://www.kaggle.com/models/google/movenet/tensorFlow2/multipose-lightning/1?tfhub-redirect=true
+
 - **Backbone:** MobileNetV2 (Depth Multiplier: 1.75)
 - **Decoder:** Feature Pyramid Network (FPN) with stride 4
 - **Prediction Head:** CenterNet-style keypoint detection
