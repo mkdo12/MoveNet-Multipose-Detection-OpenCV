@@ -54,7 +54,13 @@ The architecture leverages a **MobileNetV2 image feature extractor**, combined w
 ## 🎥 Input Sources
 
 - Pre-recorded video files (MP4)
+  ![soccer_footage_1](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%20(2513).png)
+  ![soccer_footage_2](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%20(2518).png)
+  ![soccer_footage_3](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%20(2530).png)
+  
 - Live webcam stream for real-time pose estimation
+  ![webcam_footage_1](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%202026-01-02%20200650.png)
+  ![webcam_footage_2](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%202026-01-02%20200727.png)
 
 ---
 
